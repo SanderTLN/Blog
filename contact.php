@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Noto+Serif|Tangerine" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
-	<title>Home</title>
+	<title>Contact</title>
 </head>
 <body>
     <style>
@@ -26,9 +26,12 @@
 			</ul>
 		</div>
 		<div class="content">
-			<h2 class="content-title">Recent Articles</h2>
+			<h2 class="content-title">Contacts</h2>
 			<hr>
 		</div>
+        <div class="contact">
+            Johnny they are in the trees!
+        </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>
 		</div>

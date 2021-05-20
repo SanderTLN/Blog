@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Noto+Serif|Tangerine" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
-	<title>Home</title>
+	<title>About</title>
 </head>
 <body>
     <style>
@@ -26,9 +26,12 @@
 			</ul>
 		</div>
 		<div class="content">
-			<h2 class="content-title">Recent Articles</h2>
+			<h2 class="content-title">Information</h2>
 			<hr>
 		</div>
+        <div class="about">
+            There should be information here, but it's not here.
+        </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>
 		</div>
