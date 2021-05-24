@@ -11,6 +11,8 @@
         body {
             background-image: url(img/logo.jpg);
             background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 	<div class="container">
@@ -22,6 +24,7 @@
 			  <li><a class="active" href="index.php">Home</a></li>
 			  <li><a href="contact.php">Contact</a></li>
 			  <li><a href="about.php">About</a></li>
+			  <li><a href="articles.php">Articles</a></li>
               <li><a href="admin.php">Log in</a></li>
 			</ul>
 		</div>
@@ -30,7 +33,7 @@
 			<hr>
 		</div>
         <div class="contact">
-            Johnny they are in the trees!
+            Here might be some contacts
         </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>

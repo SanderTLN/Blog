@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Noto+Serif|Tangerine" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
-	<title>Home</title>
+	<title>Articles</title>
 </head>
 <body>
     <style>
@@ -24,14 +24,17 @@
 			  <li><a class="active" href="index.php">Home</a></li>
 			  <li><a href="contact.php">Contact</a></li>
 			  <li><a href="about.php">About</a></li>
-			  <li><a href="articles.php">Articles</a></li>
+              <li><a href="articles.php">Articles</a></li>
               <li><a href="admin.php">Log in</a></li>
 			</ul>
 		</div>
 		<div class="content">
-			<h2 class="content-title">Recent Articles</h2>
+			<h2 class="content-title">All Articles</h2>
 			<hr>
 		</div>
+        <div class="contact">
+            Here might be all articles
+        </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>
 		</div>
