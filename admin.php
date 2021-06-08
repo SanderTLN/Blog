@@ -1,7 +1,7 @@
 <?php
-if(isset($_SESSION['role'])=='user' || isset($_SESSION['role'])=='administrator'){
-
-}
+require_once ('conf.php');
+ob_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ if(isset($_SESSION['role'])=='user' || isset($_SESSION['role'])=='administrator'
     <title>Autorization</title>
 </head>
 <body>
-    <form action="action_page.php" method="post">
+    <form action="index.php" method="post">
         <div class="container">
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
@@ -25,10 +25,26 @@ if(isset($_SESSION['role'])=='user' || isset($_SESSION['role'])=='administrator'
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
         </div>
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
     </form>
 </body>
 </html>
+
+<?php
+            $msg = '';
+            
+            if (isset($_POST['index.php']) && !empty($_POST['uname']) 
+               && !empty($_POST['psw'])) {
+				
+               if ($_POST['uname'] == 'BIGDADDY777' && 
+                  $_POST['psw'] == 'coolfolks') {
+                  $_SESSION['valid'] = true;
+                  $_SESSION['timeout'] = time();
+                  $_SESSION['username'] = 'BIGDADDY777';
+                  
+                  echo 'You have entered valid use name and password';
+               }else {
+                  $msg = 'Wrong username or password';
+               }
+            }
+         ?>
+
