@@ -9,7 +9,7 @@
 <body>
     <style>
         body {
-            background-image: url(img/logo.jpg);
+            background-image: url(img/img.png);
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -33,7 +33,21 @@
 			<hr>
 		</div>
         <div class="about">
-            There should be information here, but it's not here.
+            We are studying at the Tallinn Industrial Education Center as a software developer.
+            <br><br>
+            We study various programming languages such as:
+            <br>
+            • Python
+            <br>
+            • C#
+            <br>
+            • JavaScript
+            <br>
+            • HTML
+            <br>
+            • PHP
+            <br>
+            • SQL
         </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>

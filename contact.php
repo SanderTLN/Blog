@@ -9,7 +9,7 @@
 <body>
     <style>
         body {
-            background-image: url(img/logo.jpg);
+            background-image: url(img/img.png);
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -33,7 +33,13 @@
 			<hr>
 		</div>
         <div class="contact">
-            Here might be some contacts
+            Site creators:
+            <br><br>
+            Sander Demihhovski, Email: sander@gmail.com
+            <br><br>
+            Ilja Filatov, Email: ilja@gmail.com
+            <br><br>
+            Daniel Mihol, Email: daniel@gmail.com
         </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>

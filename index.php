@@ -9,7 +9,7 @@
 <body>
     <style>
         body {
-            background-image: url(img/logo.jpg);
+            background-image: url(img/img.png);
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -32,6 +32,9 @@
 			<h2 class="content-title">Recent Articles</h2>
 			<hr>
 		</div>
+        <div class="welcomText">
+            Welcome to home page in our blog.
+        </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>
 		</div>

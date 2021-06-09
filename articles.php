@@ -9,7 +9,7 @@
 <body>
     <style>
         body {
-            background-image: url(img/logo.jpg);
+            background-image: url(img/img.png);
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -32,8 +32,8 @@
 			<h2 class="content-title">All Articles</h2>
 			<hr>
 		</div>
-        <div class="contact">
-            Here might be all articles
+        <div class="articles">
+            On this page you will find all articles.
         </div>
 		<div class="footer">
 			<p>MyBlog &copy; <?php echo date('Y'); ?></p>
