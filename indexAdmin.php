@@ -22,7 +22,7 @@
 			</div>
 			<ul>
               <li><a href="indexAdmin.php">Articles</a></li>
-              <li><a href="index.php">Log Out</a></li>
+              <li><a href="logout.php">Log out</a></li>
 			</ul>
 		</div>
 		<div class="content">

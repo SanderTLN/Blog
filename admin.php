@@ -1,7 +1,5 @@
-<?php
-require_once ('conf.php');
-ob_start();
-session_start();
+<?php include('path.php'); ?>
+<?php include(ROOT_PATH . "/app/controllers/users.php");
 ?>
 
 <!DOCTYPE html>
@@ -12,39 +10,15 @@ session_start();
     <title>Autorization</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+    <form action="admin.php" method="post">
         <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
+            <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
+            <label>Username</label>
+            <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
+            <label>Password</label>
+            <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
+            <button type="submit" name="login-btn" class="btn btn-big">Login</button>
         </div>
     </form>
 </body>
 </html>
-
-<?php
-            $msg = '';
-            
-            if (isset($_POST['index.php']) && !empty($_POST['uname']) 
-               && !empty($_POST['psw'])) {
-				
-               if ($_POST['uname'] == 'BIGDADDY777' && 
-                  $_POST['psw'] == 'coolfolks') {
-                  $_SESSION['valid'] = true;
-                  $_SESSION['timeout'] = time();
-                  $_SESSION['username'] = 'BIGDADDY777';
-                  
-                  echo 'You have entered valid use name and password';
-               }else {
-                  $msg = 'Wrong username or password';
-               }
-            }
-         ?>
-
