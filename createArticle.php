@@ -22,7 +22,7 @@
 			</div>
 			<ul>
               <li><a href="indexAdmin.php">Articles</a></li>
-              <li><a href="<?php echo BASE_URL . '/index.php' ?>" class="logout">Log out</a></li>
+              <li><a href="logout.php">Log out</a></li>
 			</ul>
 		</div>
 		<div class="content">
